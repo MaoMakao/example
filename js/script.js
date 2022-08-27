@@ -52,11 +52,12 @@ window.addEventListener("DOMContentLoaded", () => {
     };
   }
   function getZero(num) {
-    if (num >= 0 && num < 10) {
-      return `0${num}`;
-    } else {
-      return num;
-    }
+     // if (num >= 0 && num < 10) {
+    //   return `0${num}`;
+    // } else {
+    //   return num;
+    // }
+    return num >= 0 && num < 10 ? `0${num}` : num;
   }
 
   function setClock(selector, endtime) {
